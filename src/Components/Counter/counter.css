@@ -1,0 +1,93 @@
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.counter span {
+  font-size: 160px;
+  padding: 15px;
+  margin: 15px;
+  color: #2b2b2c;
+}
+
+.counter button.actionBtn {
+  margin: 20px 50px;
+  font-size: 40px;
+  height: 80px;
+  width: 80px;
+  border-radius: 50px;
+  background-color: #ff7d00;
+  border: 2px solid #ff7d00;
+  color: white;
+}
+
+.counter button.actionBtn:nth-of-type(2) {
+  color: #ff7d00;
+  background-color: white;
+}
+.counter .changeBtn {
+  background-color: #0a8ff5;
+  margin: 20px 15px;
+  border-radius: 5px;
+  border: 2px solid #0a8ff5;
+  display: inline-flex;
+}
+.counter .changeBtn button {
+  font-size: 25px;
+  width: 120px;
+  background-color: #0a8ff5;
+  border: none;
+  color: white;
+  margin: 0 10px;
+}
+
+.counter .changeBtn input {
+  border: none;
+  font-size: 20px;
+  width: 80px;
+  color: #0a8ff5;
+  text-align: center;
+}
+.counter .errorMessage {
+  color: red;
+}
+
+.counter .error {
+  background-color: rgb(255, 217, 217);
+  border: 2px solid red;
+  border-radius: 0px;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 12px #ccc;
+}
+
+.counter .reset {
+  border: 2px solid red;
+  background-color: red;
+  font-size: 27px;
+  color: white;
+  margin: 20px;
+  padding: 10px 40px;
+  border-radius: 10px;
+}
+
+.counter .reset:hover {
+  color: red;
+  background-color: white;
+}
+
+@media (width<510px) {
+  .counter .btnContainer {
+    display: flex;
+  }
+  .counter .btnContainer .changeBtn {
+    flex-direction: column;
+    align-items: center;
+  }
+  .counter .btnContainer .changeBtn input {
+    width: 100%;
+    height: 30px;
+  }
+}

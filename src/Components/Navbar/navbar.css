@@ -1,0 +1,85 @@
+.navBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  min-width: 200px;
+  width: fit-content;
+  background: linear-gradient(#001524, #011c2ffe);
+  background-position: -30px;
+  height: 100vh;
+  position: sticky;
+  top: 0px;
+}
+
+.navBar .header .navIcon {
+  position: absolute;
+  display: none;
+  top: 28px;
+  left: 10px;
+}
+
+.navBar h1 {
+  margin: 3px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.navBar h1 span {
+  color: #ff7d00;
+}
+
+.navBar .tools {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.navBar .tools button {
+  background-color: inherit;
+  border: none;
+  color: white;
+  text-align: left;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 3px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.navBar button.active {
+  background-color: #313e47c2;
+}
+
+.navBar .tools button:hover {
+  background-color: #5f7687c2;
+}
+.navBar .navIcon {
+  color: white;
+  font-size: 30px;
+}
+@media (width<670px) {
+  .navBar .tools {
+    display: none;
+  }
+  .App {
+    flex-direction: column;
+  }
+  .navBar {
+    height: 90px;
+    width: 100%;
+    margin: 0;
+    position: relative;
+  }
+  .navBar .header .navIcon {
+    display: flex;
+  }
+}
+
+.navBar .tools.openBar {
+  display: flex;
+  background-color: #001524;
+}

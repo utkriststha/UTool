@@ -1,0 +1,165 @@
+.bmi {
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bmi .container {
+  margin: 10px;
+  box-shadow: 0px 0px 12px #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: fit-content;
+  min-width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.bmi .container .som {
+  width: 100%;
+}
+
+.bmi .container .som button {
+  width: 50%;
+  background-color: #ffffff;
+  color: #0a8ff5;
+  font-size: 18px;
+  font-weight: 500;
+  border: 1px solid #0a8ff5;
+  padding: 10px;
+  margin: 10px auto;
+}
+.bmi .container .som button.active {
+  background-color: #0a8ff5;
+  color: white;
+}
+.bmi .container form {
+  margin: 5px;
+  padding: 5px auto;
+}
+
+.bmi .container .inputBar {
+  width: 100%;
+  font-size: 1.2rem;
+  margin: 8px 0;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+.bmi .container .inputBar input {
+  width: 80%;
+  font-size: 1.2rem;
+  padding: 8px 4px;
+  border: none;
+  border-right: 1px solid black;
+}
+
+.bmi .container .inputBar span {
+  width: 20%;
+  color: #0a8ff5;
+  padding: 10px;
+  margin: auto;
+}
+.bmi .container .action {
+  padding: 10px 0px;
+}
+
+.bmi .container .action button {
+  display: block;
+  width: 100%;
+  font-size: 1.2rem;
+  margin: 8px 0;
+  padding: 10px 0;
+  background-color: #0a8ff5;
+  color: #fff;
+  border: 1px solid #0a8ff5;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.bmi .container .action button:nth-of-type(2) {
+  background-color: #fff;
+  color: #0a8ff5;
+}
+
+.bmi .messageBox {
+  margin: 30px;
+  min-width: 300px;
+  min-height: 00px;
+  box-shadow: 0px 0px 12px #ccc;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bmi .messageBox h2 {
+  border-radius: 10px 10px 0px 0px;
+  font-size: 22px;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  background-color: #0a8ff5;
+  color: white;
+  width: 100%;
+}
+.bmi .messageBox div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bmi .messageBox div div {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid grey;
+}
+.bmi .messageBox div .bmiResult {
+  color: #0a8ff5;
+  padding: 30px;
+  font-size: 40px;
+}
+.bmi .messageBox h3 {
+  align-self: flex-start;
+  margin: 25px;
+}
+.bmi .messageBox .errorMessage {
+  background-color: rgb(255, 217, 217);
+  color: red;
+}
+
+.bmi .messageBox.error {
+  border: 2px solid red;
+  border-radius: 0px;
+}
+.bmi .messageBox p {
+  margin: 25px;
+  margin-top: 10px;
+}
+
+.img-container {
+  text-align: center;
+}
+
+.img-container img {
+  height: 200px;
+}
+@media (width<750px) {
+  .bmi .messageBox div {
+    flex-direction: column-reverse;
+  }
+  .bmi .messageBox div div {
+    margin: 10px;
+    border-right: none;
+    border-top: 2px solid grey;
+  }
+  .bmi .messageBox div .bmiResult {
+    padding: 5px;
+    margin: 5px;
+  }
+}
